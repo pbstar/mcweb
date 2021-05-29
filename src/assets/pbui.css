@@ -1,0 +1,65 @@
+.pb-btn {
+  border: 1px solid rgb(199, 199, 199);
+  padding: 4px 10px;
+  padding-bottom: 5px;
+  background-color: #eee;
+  color: black;
+  border-radius: 7px;
+}
+
+a.pb-btn {
+  padding: 6.2px 10px;
+  padding-top: 4.2px;
+}
+
+a.pb-btn:hover {
+  color: black;
+}
+
+.pb-btn-blue {
+  background-color: rgb(79, 118, 243);
+  color: #fff;
+}
+
+.pb-btn-white {
+  background-color: white;
+  color: black;
+}
+
+.pb-btn-green {
+  background-color: rgb(84, 201, 84);
+  color: white;
+}
+
+.pb-btn-yellow {
+  background-color: rgb(247, 247, 91);
+  color: black;
+}
+
+.pb-btn-orange {
+  background-color: rgb(255, 175, 25);
+  color: white;
+}
+
+.pb-btn-red {
+  background-color: rgb(255, 62, 62);
+  color: white;
+}
+
+.pb-btn-s {
+  font-size: 12px;
+  padding: 0px 4px 1px;
+  border-radius: 4px;
+}
+
+.pb-btn-m {
+  font-size: 13.5px;
+  padding: 2px 6px 3px;
+  border-radius: 5px;
+}
+
+.pb-btn-xl {
+  font-size: 18px;
+  padding: 6px 12px 8px;
+  border-radius: 6px;
+}

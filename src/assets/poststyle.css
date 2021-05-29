@@ -1,0 +1,122 @@
+/* 文章标题 */
+.postcontent {
+  font-size: 15px;
+}
+
+.postcontent h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-top: 14px;
+}
+
+.postcontent h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin-top: 12px;
+}
+
+.postcontent h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.postcontent h4 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+.postcontent h5 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 6px;
+}
+
+.postcontent h6 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-top: 4px;
+}
+
+/* 代码片段 */
+.postcontent xmp {
+  font-size: 14px;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(182, 182, 182);
+  color: rgb(66, 66, 66);
+  padding: 10px;
+  display: block;
+  margin-bottom: 6px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  white-space: pre-line;
+}
+
+/* 段落 */
+.postcontent p {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+/* 列表 */
+.postcontent ul,
+.postcontent ol {
+  margin-bottom: 6px;
+}
+
+.postcontent li {
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+/* 超链接 */
+.postcontent a {
+  font-size: 15px;
+  margin-bottom: 6px;
+  display: inline-block;
+  color: rgb(0, 0, 165);
+}
+
+.postcontent a:hover {
+  color: red;
+}
+
+/* 表格 */
+.postcontent table {
+  font-size: 15px;
+  text-align: center;
+}
+
+.postcontent table {
+  font-size: 15px;
+  text-align: center;
+}
+
+.postcontent th,
+.postcontent td {
+  border: 1px solid rgb(107, 107, 107);
+  padding: 0 5px;
+}
+
+.postcontent th {
+  background-color: rgb(212, 212, 212);
+}
+
+.postcontent td {
+  background-color: rgb(241, 241, 241);
+}
+
+/* 加粗 */
+.postcontent b {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 3px;
+}
+
+/* 图片 */
+.postcontent img {
+  display: block;
+  max-width: 100%;
+  margin-top: 5px;
+}
