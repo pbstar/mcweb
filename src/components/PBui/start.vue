@@ -7,31 +7,13 @@
       <button class="copy"
               @click="clickfun($event)">复制</button>
       <code>
-        &lt;link rel="stylesheet" href="#"&gt;
-      </code>
-    </div>
-    <h5>npm 安装并引入</h5>
-    <h6>安装</h6>
-    <div class="codebox">
-      <button class="copy"
-              @click="clickfun($event)">复制</button>
-      <code>
-        npm install pbui
-      </code>
-    </div>
-    <h6>引入</h6>
-    <div class="codebox">
-      <button class="copy"
-              @click="clickfun($event)">复制</button>
-      <code>
-        &lt;link rel="stylesheet" href="#"&gt;
+        &lt;link rel="stylesheet" href="http://cdn.mcweb.top/pbui.css"&gt;
       </code>
     </div>
   </div>
 </template>
 <style scoped>
 .uirbox h4 {
-  color: #ffd04b;
   margin-top: 10px;
 }
 .uirbox p {
@@ -66,16 +48,11 @@ code {
 export default {
   methods: {
     clickfun (e) {
-      // 创建range对象
       let range = document.createRange();
-      // 传入需要选中的节点
       range.selectNodeContents(e.currentTarget.nextElementSibling);
       var selection = document.getSelection();
-      // 清空选中的区域
       selection.removeAllRanges();
-      // 添加选中区域
       selection.addRange(range);
-      // 执行复制
       document.execCommand('Copy')
       e.currentTarget.innerHTML = '已复制'
       selection.removeAllRanges();
