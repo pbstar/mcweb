@@ -5,20 +5,28 @@
                    type="card"
                    height="200px">
         <el-carousel-item>
-          <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2363996093,2957632807&fm=26&gp=0.jpg"
-               alt="">
+          <router-link to="/Blog/detail/22">
+            <img src="https://img2.baidu.com/it/u=2407027947,3539111736&fm=26&fmt=auto&gp=0.jpg"
+                 alt="">
+          </router-link>
         </el-carousel-item>
         <el-carousel-item>
-          <img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1473427145,3438834399&fm=26&gp=0.jpg"
-               alt="">
+          <router-link to="/Blog/detail/18">
+            <img src="https://img2.baidu.com/it/u=2880312097,2157387197&fm=26&fmt=auto&gp=0.jpg"
+                 alt="">
+          </router-link>
         </el-carousel-item>
         <el-carousel-item>
-          <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2102352833,3269426934&fm=26&gp=0.jpg"
-               alt="">
+          <router-link to="/Blog/detail/15">
+            <img src="https://img0.baidu.com/it/u=3522333077,1160624753&fm=26&fmt=auto&gp=0.jpg"
+                 alt="">
+          </router-link>
         </el-carousel-item>
         <el-carousel-item>
-          <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2106920068,4133797904&fm=26&gp=0.jpg"
-               alt="">
+          <router-link to="/Blog/detail/12">
+            <img src="https://img1.baidu.com/it/u=417571815,4029812825&fm=26&fmt=auto&gp=0.jpg"
+                 alt="">
+          </router-link>
         </el-carousel-item>
       </el-carousel>
     </div>
@@ -130,7 +138,7 @@
     <el-pagination background
                    layout="prev, pager, next"
                    :total="postlists.length"
-                   page-size="10"
+                   :page-size=10
                    style="margin:20px auto 0;width:100%"
                    @prev-click="toprev"
                    :current-page.sync="page"

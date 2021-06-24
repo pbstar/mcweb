@@ -1767,7 +1767,7 @@
     height: 200px;
     top: 150px;
     z-index: 2;
-    background: url(../images/bg1.png) no-repeat;
+    background: url(https://z3.ax1x.com/2021/06/22/ReHWN9.png) no-repeat;
     animation: move_bg 80s linear infinite;
   }
   .bg2 {
@@ -1776,7 +1776,7 @@
     width: 100%;
     height: 200px;
     z-index: 1;
-    background: url(../images/bg2.png) no-repeat;
+    background: url(https://z3.ax1x.com/2021/06/22/ReHfhR.png) no-repeat;
     animation: move_bg 100s linear infinite;
   }
   .bear {
