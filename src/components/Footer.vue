@@ -2,10 +2,10 @@
   <div class="footer">
     <div class="copyright">
       Copyright © 2020 - 2021 by <a href="http://www.mcweb.top/">www.mcweb.top</a> All rights reserved.
-      <p><a href="https://beian.miit.gov.cn">冀ICP备2021011553号</a>
-        <br><img src="../assets/gh.png"
-             alt=""
-             srcset=""><a href="http://www.beian.gov.cn/">冀公安备13028302000151号</a>
+      <p>
+        <a href="https://beian.miit.gov.cn">冀ICP备2021011553号</a>
+        <span class="baor">|</span>
+        <a href="http://www.beian.gov.cn/">冀公安备13028302000151号</a>
       </p>
     </div>
   </div>
@@ -39,14 +39,15 @@
     justify-content: center;
     align-items: center;
   }
-  .copyright img {
-    margin-left: 10px;
-  }
 }
 .footer {
   width: 100%;
   height: 100px;
   background-color: #545c64;
+}
+.copyright .baor {
+  margin-top: -1px;
+  margin: -3px 5px 0;
 }
 a {
   color: #ffd04b;

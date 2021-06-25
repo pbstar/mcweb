@@ -92,7 +92,8 @@
           <a href="http://api.mcweb.top/">梦辰Api</a>
           <a href="http://emoji.mcweb.top/">表情包搜索助手</a>
           <a href="http://img.mcweb.top/">梦辰图床</a>
-          <a href="http://www.mcweb.top/">梦辰网络</a>
+          <a href="https://github.com/pbstar">初辰Github</a>
+          <a href="https://blog.csdn.net/chuenst">初辰CSDN</a>
         </div>
       </div>
     </div>
@@ -127,6 +128,7 @@
   margin-right: 20px;
   line-height: 30px;
   height: 30px;
+  white-space: nowrap;
 }
 .bryqbox a:hover {
   color: blue !important;
