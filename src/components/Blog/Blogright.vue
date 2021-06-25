@@ -202,7 +202,7 @@ export default {
   },
   methods: {
     showIcon () {
-      if (document.documentElement.scrollTop > 352) {
+      if (document.documentElement.scrollTop > 513) {
         this.isscroll = true
       } else {
         this.isscroll = false

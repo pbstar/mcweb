@@ -103,11 +103,14 @@
   </div>
 </template>
 <style scoped>
+.detail {
+  width: 100%;
+}
 .postbox {
   background-color: #fff;
   margin-top: 20px;
   padding: 10px;
-  max-width: 100%;
+  width: 100%;
 }
 .ycbox {
   width: 100%;

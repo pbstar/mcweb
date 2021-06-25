@@ -1,6 +1,7 @@
 /* 文章标题 */
 .postcontent {
   font-size: 15px;
+  width: 100%;
 }
 
 .postcontent h1 {
@@ -52,6 +53,16 @@
   margin-bottom: 6px;
   margin-top: 5px;
   box-sizing: border-box;
+}
+
+.postcontent pre {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.postcontent code {
+  width: 100% !important;
+  overflow: auto !important;
 }
 
 /* 段落 */

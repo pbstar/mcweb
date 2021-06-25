@@ -25,7 +25,7 @@ export default {
   justify-content: space-between;
 }
 .leftbox {
-  flex: 1;
+  width: 74%;
   margin-right: 20px;
 }
 .rightbox {
