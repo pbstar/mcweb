@@ -97,9 +97,7 @@
         <img :src="imgPay"
              alt="">
       </div>
-
     </div>
-
   </div>
 </template>
 <style scoped>
@@ -167,6 +165,16 @@
   z-index: 999;
   background-color: rgb(190, 190, 190);
 }
+.copy {
+  position: absolute;
+  top: 9px;
+  right: 10px;
+  font-size: 12px;
+  border: none;
+  background-color: rgb(209, 209, 209);
+  padding: 3px 5px;
+  border-radius: 5px;
+}
 @import "../../assets/poststyle.css";
 @media all and (min-width: 500px) {
   .posttitle {
@@ -220,13 +228,43 @@ export default {
     QRCode.toDataURL(window.location.href)
       .then(url => {
         this.imgPay = url
-        console.log(url);
       })
       .catch(err => {
         console.error(err)
       })
+
   },
   methods: {
+    getcopy () {
+      var pre = document.querySelectorAll('.postcontent pre')
+      for (var i = 0; i < pre.length; i++) {
+        pre[i].style.position = 'relative'
+        var copybtn = document.createElement("button");
+        copybtn.className = 'copy'
+        copybtn.innerText = '复制'
+        copybtn.style.position = 'absolute'
+        copybtn.style.top = '9px'
+        copybtn.style.right = '10px'
+        copybtn.style.fontSize = '12px'
+        copybtn.style.border = 'none'
+        copybtn.style.backgroundColor = 'rgb(209, 209, 209)'
+        copybtn.style.padding = '3px 5px'
+        copybtn.style.borderRadius = '5px'
+        pre[i].appendChild(copybtn);
+      }
+      var copy = document.querySelectorAll('.postcontent .copy')
+      for (var j = 0; j < copy.length; j++) {
+        copy[j].addEventListener('click', (e) => {
+          var input = document.createElement("input");
+          input.value = e.target.previousElementSibling.innerHTML;
+          document.body.appendChild(input);
+          input.select();
+          document.execCommand("Copy");
+          document.body.removeChild(input);
+          e.target.innerHTML = '已复制'
+        })
+      }
+    },
     gettime (time) {
       var timestamp = new Date(time * 1000);
       var year = 1900 + timestamp.getYear();
@@ -250,6 +288,11 @@ export default {
     '$route': function () {
       this.postid = this.$route.params.id
       this.getdetail()
+    },
+    posts: function () {
+      this.$nextTick(function () {
+        this.getcopy()
+      })
     }
   }
 }

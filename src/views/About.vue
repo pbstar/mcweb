@@ -22,7 +22,7 @@
                  alt="">
             <div class="ptn">
               <h5>初辰ge</h5>
-              <p>心中所想，便是梦想。</p>
+              <p>国家尚未富强 何谈儿女情长</p>
             </div>
           </div>
           <div class="pmid">
