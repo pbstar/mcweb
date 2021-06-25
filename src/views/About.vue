@@ -7,7 +7,8 @@
           并结合努力开发中的个人组件库于一体的网站系统。
         </p>
         <p>本站已开源，Github项目地址：
-          <a href="https://github.com/pbstar/mcweb">https://github.com/pbstar/mcweb</a>，
+          <a target="_blank"
+             href="https://github.com/pbstar/mcweb">https://github.com/pbstar/mcweb</a>，
           支持二次开发，不要吝啬你的star哦！
         </p>
       </div>
@@ -26,8 +27,10 @@
           </div>
           <div class="pmid">
             <p>QQ：3251932707</p>
-            <p>CSDN：<a href="https://blog.csdn.net/chuenst">https://blog.csdn.net/chuenst</a></p>
-            <p>GitHub：<a href="https://github.com/pbstar">https://github.com/pbstar</a></p>
+            <p>CSDN：<a target="_blank"
+                 href="https://blog.csdn.net/chuenst">https://blog.csdn.net/chuenst</a></p>
+            <p>GitHub：<a target="_blank"
+                 href="https://github.com/pbstar">https://github.com/pbstar</a></p>
             <p>专业技能：vue、php、MySQL</p>
           </div>
           <div class="pbot">
@@ -43,12 +46,16 @@
             <img src="http://q1.qlogo.cn/g?b=qq&nk=2958796054&s=640"
                  alt="">
             <div class="ptn">
-              <h5>蓝色king</h5>
-              <p>心事所想，便是梦想。</p>
+              <h5>兰色king</h5>
+              <p>加油打工人</p>
             </div>
           </div>
           <div class="pmid">
-
+            <p>QQ：2958796054</p>
+            <p>CSDN：<a target="_blank"
+                 href="https://blog.csdn.net/weixin_50613714">https://blog.csdn.net/weixin_50613714 </a></p>
+            <p>博客园：<a target="_blank"
+                 href="https://www.cnblogs.com/lan-sir/">https://www.cnblogs.com/lan-sir/</a></p>
           </div>
           <div class="pbot">
             <a target="_blank"
@@ -64,11 +71,15 @@
                  alt="">
             <div class="ptn">
               <h5>暑假过期le</h5>
-              <p>心事所想，便是梦想。</p>
+              <p>物极必反</p>
             </div>
           </div>
           <div class="pmid">
-
+            <p>QQ：893452711</p>
+            <p>VX：zgyyyyy321</p>
+            <p>CSDN：<a target="_blank"
+                 href="https://blog.csdn.net/weixin_49592652">https://blog.csdn.net/weixin_49592652</a></p>
+            <p>兴趣爱好：Music、篮球、编程</p>
           </div>
           <div class="pbot">
             <a target="_blank"
@@ -98,6 +109,9 @@ p,
 h5 {
   margin: 0;
 }
+a {
+  word-wrap: break-word;
+}
 .web,
 .people {
   overflow: hidden;
@@ -111,6 +125,7 @@ h5 {
   display: flex;
   justify-content: center;
   padding-bottom: 50px;
+  flex-wrap: wrap;
 }
 .about h3 {
   text-align: center;
@@ -123,8 +138,8 @@ h5 {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  width: 300px;
-  height: 370px;
+  width: 320px;
+  height: 310px;
   margin: 10px;
 }
 .peobox img {
@@ -144,7 +159,7 @@ h5 {
   justify-content: space-around;
 }
 .pmid {
-  height: 200px;
+  height: 130px;
   margin: 15px 0;
 }
 .pbbtn {
@@ -157,7 +172,7 @@ h5 {
   align-items: center;
 }
 .join img {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
 }
 </style>

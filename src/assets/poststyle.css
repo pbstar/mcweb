@@ -6,25 +6,25 @@
 .postcontent h1 {
   font-size: 28px;
   font-weight: 800;
-  margin-top: 14px;
+  margin-top: 18px;
 }
 
 .postcontent h2 {
   font-size: 26px;
   font-weight: 800;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .postcontent h3 {
   font-size: 24px;
   font-weight: 800;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .postcontent h4 {
   font-size: 22px;
   font-weight: 800;
-  margin-top: 8px;
+  margin-top: 9px;
 }
 
 .postcontent h5 {
@@ -36,7 +36,7 @@
 .postcontent h6 {
   font-size: 18px;
   font-weight: 800;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 /* 代码片段 */
@@ -52,7 +52,6 @@
   margin-bottom: 6px;
   margin-top: 5px;
   box-sizing: border-box;
-  /* white-space: pre-line; */
 }
 
 /* 段落 */
@@ -88,16 +87,14 @@
 .postcontent table {
   font-size: 15px;
   text-align: center;
-}
-
-.postcontent table {
-  font-size: 15px;
-  text-align: center;
+  border-top: 1px solid rgb(107, 107, 107);
+  border-left: 1px solid rgb(107, 107, 107);
 }
 
 .postcontent th,
 .postcontent td {
-  border: 1px solid rgb(107, 107, 107);
+  border-bottom: 1px solid rgb(107, 107, 107);
+  border-right: 1px solid rgb(107, 107, 107);
   padding: 0 5px;
 }
 
@@ -122,4 +119,5 @@
   display: block;
   max-width: 100%;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
