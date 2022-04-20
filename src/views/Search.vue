@@ -26,8 +26,6 @@
                        value="https://www.zhihu.com/search?type=content&q="></el-option>
             <el-option label="B站"
                        value="http://search.bilibili.com/all?keyword="></el-option>
-            <el-option label="史莱姆"
-                       value="http://www.slimego.cn/search.html?q="></el-option>
           </el-select>
           <div slot="append">
             <el-button icon="el-icon-search"
@@ -1670,11 +1668,11 @@
     border-radius: 8px;
   }
   .mylist li.col-3 {
-    margin: 5px 0 5px;
+    margin: 5px 0 0px;
   }
   .mylist li.col-3 svg {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
     border-radius: 5px;
   }
@@ -1737,8 +1735,34 @@
   .inputlogo {
     display: none;
   }
+  .bg1 {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 200px;
+    background: url(../images/bg1.png) no-repeat;
+    animation: move_bg 80s linear infinite;
+  }
+
+  .bg2 {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 300px;
+    background: url(../images/bg2.png) no-repeat;
+    animation: move_bg 100s linear infinite;
+  }
+
+  .bear {
+    position: absolute;
+    top: 370px;
+    width: 100px;
+    height: 50px;
+    background: url(../images/bear.png) no-repeat;
+    animation: bear 1s steps(8) infinite, move 12s forwards;
+  }
 }
-@media all and (max-width: 500px) {
+@media all and (max-width: 499px) {
   .inputbox {
     width: 90%;
     margin: 40px auto 0;
@@ -1748,24 +1772,28 @@
   }
   .searchbox {
     width: 100%;
-    height: 289px;
+    height: 249px;
     background-color: rgb(245, 245, 245);
     border-bottom: 1px solid rgb(209, 209, 209);
     overflow: hidden;
   }
   .inputlogo {
     text-align: center;
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 800;
-    line-height: 60px;
-    height: 60px;
-    color: #d39c06;
+    line-height: 50px;
+    height: 50px;
+    color: #fff;
+    width: 180px;
+    margin: 0 auto 20px;
+    background-color: rgba(0, 0, 0, 0.463);
+    border-radius: 25px;
   }
   .bg1 {
     position: absolute;
     width: 100%;
     height: 200px;
-    top: 150px;
+    top: 110px;
     z-index: 2;
     background: url(https://z3.ax1x.com/2021/06/22/ReHWN9.png) no-repeat;
     animation: move_bg 80s linear infinite;
@@ -1782,7 +1810,7 @@
   .bear {
     z-index: 3;
     position: absolute;
-    top: 280px;
+    top: 240px;
     width: 100px;
     height: 50px;
     background: url(../images/bear.png) no-repeat;
@@ -1791,33 +1819,6 @@
 }
 </style>
 <style>
-.bg1 {
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 200px;
-  background: url(../images/bg1.png) no-repeat;
-  animation: move_bg 80s linear infinite;
-}
-
-.bg2 {
-  position: absolute;
-  top: 100px;
-  width: 100%;
-  height: 300px;
-  background: url(../images/bg2.png) no-repeat;
-  animation: move_bg 100s linear infinite;
-}
-
-.bear {
-  position: absolute;
-  top: 370px;
-  width: 100px;
-  height: 50px;
-  background: url(../images/bear.png) no-repeat;
-  animation: bear 1s steps(8) infinite, move 12s forwards;
-}
-
 @keyframes bear {
   0% {
     background-position: 0 0;
